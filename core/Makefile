@@ -749,6 +749,7 @@ ifneq ($(OTA_PACKAGE_SIGNING_KEY),)
     OTA_PUBLIC_KEYS := $(OTA_PACKAGE_SIGNING_KEY).x509.pem
 else
     PRODUCT_EXTRA_RECOVERY_KEYS += \
+	build/target/product/security/androidarmv6 \
         build/target/product/security/cm \
         build/target/product/security/cm-devkey \
         build/target/product/security/bacon
